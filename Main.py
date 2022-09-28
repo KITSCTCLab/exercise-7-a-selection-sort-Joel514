@@ -1,8 +1,13 @@
 from typing import List
 
-def selectionSort(array, size) -> List[int]:
-  # Write your code here
-
+def selectionSort(array, size):
+  for j in range (0,size-1):
+    smallest = j
+    for i in range (j+1,size):
+     if (array[ i ] < array[ smallest]):
+      smallest= i
+    array[ j ], array[ smallest ]= array[ smallest ],array[j]
+  return array
 # Do not change the following code
 input_data = input()
 data = []
