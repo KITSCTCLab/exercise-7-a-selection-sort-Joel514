@@ -6,7 +6,7 @@ def selectionSort(array, size) -> List[int]:
     for i in range (j+1,size):
      if (array[ i ] < array[ smallest]):
       smallest= i
-      Exchange(array[ j ], array[ smallest ])
+      Swap(array[ j ], array[ smallest ])
 
 # Do not change the following code
 input_data = input()
